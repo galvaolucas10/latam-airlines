@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SkyTrack Airlines</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME -->
+<section id="home" class="screen active">
+
+  <div class="hero">
+
+    <h1>SKYTRACK AIRLINES</h1>
+
+    <p>Monitoramento de voos em tempo real</p>
+
+    <button id="openApp">
+      GO LIVE
+    </button>
+
+  </div>
+
+</section>
+
+
+
+<!-- APP -->
+<section id="app" class="screen">
+
+  <!-- MENU -->
+  <div class="menu">
+
+    <h2>Central de Voos</h2>
+
+    <div class="menu-buttons">
+
+      <button id="liveBtn">
+        ✈ VOO AO VIVO
+      </button>
+
+      <button id="ticketBtn">
+        🎫 VALOR DA PASSAGEM
+      </button>
+
+      <button id="infoBtn">
+        📋 INFO DO VOO
+      </button>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- VOO AO VIVO -->
+  <div class="live-section hidden" id="liveSection">
+
+    <div class="map">
+
+      <!-- ROTA -->
+      <div class="route"></div>
+
+      <!-- AVIÃO -->
+      <div class="plane" id="plane">
+        ✈
+      </div>
+
+      <!-- CIDADES -->
+      <div class="city gru">
+        GRU
+      </div>
+
+      <div class="city lis">
+        LIS
+      </div>
+
+    </div>
+
+
+
+    <!-- STATUS -->
+    <div class="status-box">
+
+      <h3>Status do voo</h3>
+
+      <p id="statusText">
+        Preparando aeronave...
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- PASSAGEM -->
+  <div class="ticket-section hidden" id="ticketSection">
+
+    <div class="ticket-card">
+
+      <h2>Valor da Passagem</h2>
+
+      <p class="price">
+        R$ 4.890
+      </p>
+
+      <div class="ticket-grid">
+
+        <div>
+          <span>Classe</span>
+          <strong>Executiva Premium</strong>
+        </div>
+
+        <div>
+          <span>Bagagem</span>
+          <strong>2 malas + bagagem de mão</strong>
+        </div>
+
+        <div>
+          <span>Assento</span>
+          <strong>12A • Janela</strong>
+        </div>
+
+        <div>
+          <span>Check-in</span>
+          <strong>Online disponível</strong>
+        </div>
+
+        <div>
+          <span>Embarque</span>
+          <strong>22:45</strong>
+        </div>
+
+        <div>
+          <span>Terminal</span>
+          <strong>Terminal 3 • GRU</strong>
+        </div>
+
+        <div>
+          <span>Duração</span>
+          <strong>10h 35min</strong>
+        </div>
+
+        <div>
+          <span>Escalas</span>
+          <strong>Voo direto</strong>
+        </div>
+
+      </div>
+
+      <div class="ticket-footer">
+
+        <p>
+          Guarulhos (GRU) → Lisboa (LIS)
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- INFO -->
+  <div class="info-section hidden" id="infoSection">
+
+    <div class="info-card">
+
+      <h2>LATAM LA8084</h2>
+
+      <div class="grid">
+
+        <div>
+          <span>Origem</span>
+          <strong>Guarulhos (GRU)</strong>
+        </div>
+
+        <div>
+          <span>Destino</span>
+          <strong>Lisboa (LIS)</strong>
+        </div>
+
+        <div>
+          <span>Aeronave</span>
+          <strong>Boeing 777-300ER</strong>
+        </div>
+
+        <div>
+          <span>Status</span>
+          <strong>Em voo</strong>
+        </div>
+
+        <div>
+          <span>Velocidade</span>
+          <strong>870 km/h</strong>
+        </div>
+
+        <div>
+          <span>Altitude</span>
+          <strong>36.000 ft</strong>
+        </div>
+
+        <div>
+          <span>Portão</span>
+          <strong>A12</strong>
+        </div>
+
+        <div>
+          <span>Pista</span>
+          <strong>09R</strong>
+        </div>
+
+        <div>
+          <span>Combustível</span>
+          <strong>78%</strong>
+        </div>
+
+        <div>
+          <span>Temperatura externa</span>
+          <strong>-42°C</strong>
+        </div>
+
+        <div>
+          <span>Tripulação</span>
+          <strong>14 membros</strong>
+        </div>
+
+        <div>
+          <span>Passageiros</span>
+          <strong>312 passageiros</strong>
+        </div>
+
+      </div>
+
+
+
+      <div class="extra-info">
+
+        <h3>Detalhes do voo</h3>
+
+        <p>
+          Partida prevista: 23:15 • Chegada prevista: 09:50
+        </p>
+
+        <p>
+          Tempo restante de voo: 6h 22min
+        </p>
+
+        <p>
+          Clima em Lisboa: 18°C • Céu limpo
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
